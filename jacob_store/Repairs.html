@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز الصيانة - متجر إلكتروني</title>
+    <link rel="icon" type="image/x-icon" href="/image/Asset9.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* Inline styles moved to style.css */
+    </style>
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>مركز الصيانة</h1>
+        <p>خدمة صيانة متكاملة لأجهزتك الإلكترونية</p>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+            <i class="fas fa-store"></i> متجر إلكتروني
+        </a>
+        <ul class="nav-items">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="Repairs.html">مركز الصيانة</a></li>
+            <li><a href="Support.html">دعم فني</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        <div class="user-actions">
+            <a href="cart.html" class="action-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">3</span>
+            </a>
+            <a href="account.html" class="action-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- محتوى مركز الصيانة -->
+    <section class="repair-services" style="width: 100vw; max-width: 100%; min-height: 350px; background: linear-gradient(120deg, #f9f9f9 60%, #e3f0ff 100%); margin: 0; border-radius: 0; box-shadow: none; padding: 40px 0 60px 0;">
+        <div class="service-header" style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 2.3rem; color: #007bff; margin-bottom: 10px;">خدمة صيانة متكاملة لأجهزتك</h2>
+            <p style="font-size: 1.2rem; color: #444;">فريق فني متخصص لصيانة الموبايلات والأجهزة الإلكترونية</p>
+        </div>
+        <div class="service-grid" style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; width: 90%; margin: 0 auto;">
+            <div class="service-card" style="flex: 1 1 350px; min-width: 300px; max-width: 500px; background: #fff; border-radius: 18px; box-shadow: 0 6px 24px rgba(0,0,0,0.10); padding: 40px 30px; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center;">
+                <i class="fas fa-camera service-icon" style="color: #007bff; font-size: 3.2rem; margin-bottom: 18px;"></i>
+                <h3 style="font-size: 1.6rem; color: #222; margin-bottom: 12px;">صور المشكلة</h3>
+                <p style="color: #666; font-size: 1.1rem;">ارفع صورًا توضح مشكلة جهازك</p>
+            </div>
+            <div class="service-card" style="flex: 1 1 350px; min-width: 300px; max-width: 500px; background: #fff; border-radius: 18px; box-shadow: 0 6px 24px rgba(0,0,0,0.10); padding: 40px 30px; margin-bottom: 30px; display: flex; flex-direction: column; align-items: center;">
+                <i class="fab fa-whatsapp service-icon" style="color: #25D366; font-size: 3.2rem; margin-bottom: 18px;"></i>
+                <h3 style="font-size: 1.6rem; color: #222; margin-bottom: 12px;">تواصل مع الفني</h3>
+                <p style="color: #666; font-size: 1.1rem;">تواصل مباشرة مع الفني عبر واتساب</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- حالة الفني -->
+    <section class="technician-status" style="background: #f9f9f9; border-radius: 12px; margin: 30px auto 0; max-width: 600px; padding: 25px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <div>
+            <h3 style="font-size: 1.3rem; color: #007bff;">حالة الفني: <span style="color: #27ae60; font-weight: bold;">متاح الآن</span></h3>
+            <p style="color: #555;">الفني جاهز لاستقبال طلبات الصيانة</p>
+        </div>
+    </section>
+
+    <!-- نموذج حجز موعد -->
+    <section class="appointment-form" style="background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.10); max-width: 900px; margin: 50px auto 40px auto; padding: 45px 40px; width: 90vw;">
+        <h2 style="text-align: center; color: #007bff; font-size: 2.2rem; margin-bottom: 35px; letter-spacing: 1px;">حجز موعد صيانة</h2>
+        <form style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: space-between;">
+            <div style="flex: 1 1 350px; min-width: 270px; max-width: 48%;">
+                <div class="form-group" style="margin-bottom: 22px;">
+                    <label style="font-size: 1.1rem; color: #333; margin-bottom: 8px;">الاسم الكامل</label>
+                    <input type="text" placeholder="ادخل اسمك" style="padding: 14px; border-radius: 8px; border: 1.5px solid #007bff; width: 100%;">
+                </div>
+                <div class="form-group" style="margin-bottom: 22px;">
+                    <label style="font-size: 1.1rem; color: #333; margin-bottom: 8px;">رقم الهاتف</label>
+                    <input type="tel" placeholder="ادخل رقم هاتفك" style="padding: 14px; border-radius: 8px; border: 1.5px solid #007bff; width: 100%;">
+                </div>
+                <div class="form-group" style="margin-bottom: 22px;">
+                    <label style="font-size: 1.1rem; color: #333; margin-bottom: 8px;">نوع الجهاز</label>
+                    <select style="padding: 14px; border-radius: 8px; border: 1.5px solid #007bff; width: 100%;">
+                        <option value="">اختر نوع الجهاز</option>
+                        <option value="mobile">موبايل</option>
+                        <option value="vape">فيب</option>
+                        <option value="laptop">لابتوب</option>
+                        <option value="tablet">تابلت</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+            </div>
+            <div style="flex: 1 1 350px; min-width: 270px; max-width: 48%;">
+                <div class="form-group" style="margin-bottom: 22px;">
+                    <label style="font-size: 1.1rem; color: #333; margin-bottom: 8px;">وصف المشكلة</label>
+                    <textarea placeholder="صف المشكلة التي تواجهها" style="padding: 14px; border-radius: 8px; border: 1.5px solid #007bff; width: 100%; min-height: 110px;"></textarea>
+                </div>
+                <div class="form-group" style="margin-bottom: 22px;">
+                    <label style="font-size: 1.1rem; color: #333; margin-bottom: 8px;">تحميل صور المشكلة</label>
+                    <button style="background: #0162bd; color: #ffffff; border-radius: 8px; padding: 12px 20px; font-size: 1rem; border: none; display: flex; align-items: center; gap: 8px;">
+                        <i class="fas fa-upload"></i> رفع الصور
+                    </button>
+                    <span style="font-size: 0.97rem; color: #888;">(يمكنك رفع أكثر من صورة)</span>
+                </div>
+            </div>
+            <div style="flex-basis: 100%; text-align: center; margin-top: 10px;">
+                <button class="whatsapp-button" style="width: 60%; max-width: 350px; background: #25D366; color: #fff; font-size: 1.2rem; border-radius: 8px; padding: 14px 0; display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0 auto;">
+                    <i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نظام Tawk.to حقيقي) -->
+    <div id="support-chat-icon" title="تواصل مع الدعم الفني" style="display:block; position: fixed; left: 30px; bottom: 30px; z-index: 9999; background: #007bff; color: #fff; width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.18); cursor: pointer; font-size: 2rem; transition: background 0.2s;">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="support-chat-modal" class="support-chat-modal">
+      <div class="support-chat-modal-content" style="padding:0; min-height:420px;">
+        <span class="support-chat-close" style="z-index:2; position:absolute; left:12px; top:10px; font-size:1.5rem; color:#888; cursor:pointer;">&times;</span>
+        <div id="tawkto-container" style="width:100%;height:400px;min-height:400px;overflow:hidden;border-radius:12px;"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    // إظهار وإخفاء نافذة الدردشة
+    var chatIcon = document.getElementById('support-chat-icon');
+    if(chatIcon) chatIcon.style.display = 'flex';
+    chatIcon.onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'block';
+    };
+    document.querySelector('.support-chat-close').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('support-chat-modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    // تضمين Tawk.to داخل المودال
+    (function(){
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/64a6e7e094cf5d49dc62b1e2/1h4v7kq2g'; // ضع هنا معرف Tawk.to الخاص بك
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s1.onload = function() {
+        var tawkFrame = document.querySelector('iframe[title="chat widget"]');
+        if (tawkFrame) {
+          document.getElementById('tawkto-container').appendChild(tawkFrame);
+        }
+      };
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!-- نهاية أيقونة الدردشة -->
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="#"><i class="fas fa-shipping-fast"></i> الشحن والتوصيل</a></li>
+                    <li><a href="#"><i class="fas fa-exchange-alt"></i> سياسة الإستبدال والإسترجاع</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع التسوق، القاهرة، مصر</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 01001234567</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@mobile-vape-store.com</p>
+                <p><i class="fas fa-clock"></i> ساعات العمل: 10 صباحاً - 10 مساءً</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3>النشرة البريدية</h3>
+                <p>اشترك ليصلك كل جديد عن العروض والمنتجات</p>
+                <div>
+                    <input type="email" placeholder="بريدك الإلكتروني">
+                    <button>اشتراك</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني</p>
+            <p>تصميم وتطوير: فريق المتجر الإلكتروني</p>
+        </div>
+    </footer>
+</body>
+</html>

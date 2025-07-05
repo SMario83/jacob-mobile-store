@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات - متجر إلكتروني</title>
+    <!-- توحيد الروابط والتنسيق -->
+    <link rel="icon" type="image/x-icon" href="/image/Asset9.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>سلة المشتريات</h1>
+        <p>أكمل عملية الشراء في بضع خطوات بسيطة</p>
+    </header>
+    
+    <!-- شريط التنقل -->
+    <nav>
+        <a href="index.html" class="brand-logo">
+            <i class="fas fa-store"></i> متجر إلكتروني
+        </a>
+        
+        <ul class="nav-items">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="Repairs.html">مركز الصيانة</a></li>
+            <li><a href="Support.html">دعم فني</a></li>
+            <li><a href="cart.html" class="active">سلة المشتريات</a></li>
+        </ul>
+        
+        <form class="search-form" action="search.html">
+            <input type="text" name="query" placeholder="ابحث عن منتج...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="user-actions">
+            <a href="cart.html" class="action-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">3</span>
+            </a>
+            <a href="account.html" class="action-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- محتوى سلة المشتريات -->
+    <main>
+        <div class="cart-container">
+            <!-- قائمة المنتجات -->
+            <div class="cart-items">
+                <div class="section-header">
+                    <h2><i class="fas fa-shopping-cart"></i> سلة المشتريات (3 منتجات)</h2>
+                </div>
+                
+                <!-- المنتج 1 -->
+                <div class="cart-item">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Coils+Set" alt="كويلات فيب">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">كويلات فيب - مجموعة 5 قطع</h3>
+                        <p class="product-description">كويلات عالية الجودة لمختلف أجهزة الفيب</p>
+                        <div class="product-price">
+                            <span class="current-price">120 جنيه</span>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn"><i class="fas fa-minus"></i></button>
+                            <input type="text" value="1" class="quantity-input">
+                            <button class="quantity-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="remove-btn">
+                            <i class="fas fa-trash"></i> إزالة
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- المنتج 2 -->
+                <div class="cart-item">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vape+Batteries" alt="بطاريات فيب">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">بطاريات فيب 18650 - زوج</h3>
+                        <p class="product-description">بطاريات عالية السعة وأداء ممتاز</p>
+                        <div class="product-price">
+                            <span class="current-price">180 جنيه</span>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn"><i class="fas fa-minus"></i></button>
+                            <input type="text" value="1" class="quantity-input">
+                            <button class="quantity-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="remove-btn">
+                            <i class="fas fa-trash"></i> إزالة
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- المنتج 3 -->
+                <div class="cart-item">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vape+Tank" alt="خزان فيب">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">خزان فيب سعة 5 مل - أسود</h3>
+                        <p class="product-description">خزان متين مع تصميم أنيق</p>
+                        <div class="product-price">
+                            <span class="current-price">250 جنيه</span>
+                        </div>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn"><i class="fas fa-minus"></i></button>
+                            <input type="text" value="1" class="quantity-input">
+                            <button class="quantity-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="remove-btn">
+                            <i class="fas fa-trash"></i> إزالة
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ملخص الطلب -->
+            <div class="order-summary">
+                <div class="summary-header">
+                    <h2><i class="fas fa-receipt"></i> ملخص الطلب</h2>
+                </div>
+                
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>الإجمالي الفرعي:</span>
+                        <span>550 جنيه</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>التوصيل:</span>
+                        <span>مجانًا</span>
+                    </div>
+                    
+                    <div class="summary-row total">
+                        <span>الإجمالي:</span>
+                        <span>550 جنيه</span>
+                    </div>
+                    
+                    <div class="coupon-section">
+                        <h3><i class="fas fa-tag"></i> هل لديك كود خصم؟</h3>
+                        <div class="coupon-input">
+                            <input type="text" placeholder="أدخل كود الخصم">
+                            <button>تطبيق</button>
+                        </div>
+                    </div>
+                    
+                    <button class="checkout-btn">
+                        <i class="fas fa-lock"></i> إتمام الشراء
+                    </button>
+                    
+                    <p class="secure-note">
+                        <i class="fas fa-lock"></i> عملية دفع آمنة. بياناتك محمية
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- منتجات مقترحة -->
+        <section class="suggested-products">
+            <h2><i class="fas fa-star"></i> قد يعجبك أيضًا</h2>
+            
+            <div class="products-grid">
+                <!-- المنتج 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vape+Charger" alt="شاحن فيب">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">شاحن فيب سريع 4 منافذ</h3>
+                        <div class="product-price">
+                            <span class="current-price">190 جنيه</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- المنتج 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vape+Tools" alt="أدوات فيب">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">مجموعة أدوات صيانة فيب</h3>
+                        <div class="product-price">
+                            <span class="current-price">320 جنيه</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- المنتج 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vape+Case" alt="حافظة فيب">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">حافظة فيب جلدية</h3>
+                        <div class="product-price">
+                            <span class="current-price">140 جنيه</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="#shipping"><i class="fas fa-shipping-fast"></i> الشحن والتوصيل</a></li>
+                    <li><a href="#returns"><i class="fas fa-exchange-alt"></i> سياسة الإستبدال والإسترجاع</a></li>
+                    <li><a href="#privacy"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع التسوق، القاهرة، مصر</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 01001234567</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@mobile-vape-store.com</p>
+                <p><i class="fas fa-clock"></i> ساعات العمل: 10 صباحاً - 10 مساءً</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h3>النشرة البريدية</h3>
+                <p>اشترك ليصلك كل جديد عن العروض والمنتجات</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit">اشتراك</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني</p>
+            <p>تصميم وتطوير: فريق المتجر الإلكتروني</p>
+        </div>
+    </footer>
+    
+    <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نظام Tawk.to حقيقي) -->
+<div id="support-chat-icon" title="تواصل مع الدعم الفني" style="display:block;">
+  <i class="fas fa-comments"></i>
+</div>
+<div id="support-chat-modal" class="support-chat-modal">
+  <div class="support-chat-modal-content" style="padding:0; min-height:420px;">
+    <span class="support-chat-close" style="z-index:2; position:absolute; left:12px; top:10px; font-size:1.5rem; color:#888; cursor:pointer;">&times;</span>
+    <div id="tawkto-container" style="width:100%;height:400px;min-height:400px;overflow:hidden;border-radius:12px;"></div>
+  </div>
+</div>
+<script type="text/javascript">
+// إظهار وإخفاء نافذة الدردشة
+var chatIcon = document.getElementById('support-chat-icon');
+if(chatIcon) chatIcon.style.display = 'block';
+chatIcon.onclick = function() {
+  document.getElementById('support-chat-modal').style.display = 'block';
+};
+document.querySelector('.support-chat-close').onclick = function() {
+  document.getElementById('support-chat-modal').style.display = 'none';
+};
+window.onclick = function(event) {
+  var modal = document.getElementById('support-chat-modal');
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+};
+// تضمين Tawk.to داخل المودال
+(function(){
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/64a6e7e094cf5d49dc62b1e2/1h4v7kq2g'; // ضع هنا معرف Tawk.to الخاص بك
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s1.onload = function() {
+    var tawkFrame = document.querySelector('iframe[title="chat widget"]');
+    if (tawkFrame) {
+      document.getElementById('tawkto-container').appendChild(tawkFrame);
+    }
+  };
+  s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!-- نهاية أيقونة الدردشة -->
+</body>
+</html>

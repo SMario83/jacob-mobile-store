@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج البحث - متجر إلكتروني</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>نتائج البحث</h1>
+        <p>ابحث عن أفضل المنتجات والعروض</p>
+    </header>
+    
+    <!-- شريط التنقل -->
+    <nav>
+        <a href="index.html" class="brand-logo">
+            <i class="fas fa-store"></i> متجر إلكتروني
+        </a>
+        
+        <ul class="nav-items">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="Repairs.html">مركز الصيانة</a></li>
+            <li><a href="Support.html">دعم فني</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        
+        <form class="search-form" action="search.html">
+            <input type="text" name="query" placeholder="ابحث عن منتج..." value="random">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="user-actions">
+            <a href="cart.html" class="action-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">3</span>
+            </a>
+            <a href="account.html" class="action-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </nav>
+    
+    <!-- محتوى البحث -->
+    <main>
+        <div class="search-container">
+            <!-- القائمة الجانبية للتصفية -->
+            <aside class="filters-sidebar">
+                <h2><i class="fas fa-filter"></i> تصفية النتائج</h2>
+                
+                <div class="filter-section">
+                    <h3>الفئات</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <input type="checkbox" id="category-mobiles">
+                            <label for="category-mobiles">الموبايلات</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="category-vape" checked>
+                            <label for="category-vape">الفيب</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="category-liquid">
+                            <label for="category-liquid">الليكويد</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="category-accessories">
+                            <label for="category-accessories">الإكسسوارات</label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>السعر</h3>
+                    <div class="price-range">
+                        <input type="number" placeholder="من" value="0">
+                        <input type="number" placeholder="إلى" value="1000">
+                    </div>
+                    <button>تطبيق</button>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>الحالة</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <input type="checkbox" id="condition-new">
+                            <label for="condition-new">جديد</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="condition-used" checked>
+                            <label for="condition-used">مستعمل</label>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="filter-section">
+                    <h3>التقييم</h3>
+                    <ul class="filter-list">
+                        <li>
+                            <input type="checkbox" id="rating-5">
+                            <label for="rating-5">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="rating-4">
+                            <label for="rating-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                فأكثر
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="rating-3" checked>
+                            <label for="rating-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                فأكثر
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <!-- نتائج البحث -->
+            <div class="search-results">
+                <div class="results-header">
+                    <h2>نتائج البحث عن: "فيب"</h2>
+                    <p>تم العثور على <strong>8</strong> منتجات</p>
+                    <div class="sort-options">
+                        <label>ترتيب حسب:</label>
+                        <select>
+                            <option>الأكثر صلة</option>
+                            <option>الأعلى تقييمًا</option>
+                            <option>السعر: من الأقل للأعلى</option>
+                            <option>السعر: من الأعلى للأقل</option>
+                            <option>الأحدث</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="products-grid">
+                    <!-- المنتج 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Vaporesso+XROS+3" alt="Vaporesso XROS 3">
+                            <span class="product-badge badge-new">جديد</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Vaporesso XROS 3</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.7)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">550 جنيه</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- المنتج 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Geekvape+Aegis+Legend+2" alt="Geekvape Aegis Legend 2">
+                            <span class="product-badge badge-discount">خصم 10%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Geekvape Aegis Legend 2</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.8)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">850 جنيه</span>
+                                <span class="original-price">950 جنيه</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- المنتج 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Smok+Nord+5" alt="Smok Nord 5">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">Smok Nord 5</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.6)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">480 جنيه</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- المنتج 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Vape+Coils" alt="كويلات فيب">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">كويلات فيب - مجموعة 5 قطع</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.3)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">120 جنيه</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- المنتج 5 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Vape+Batteries" alt="بطاريات فيب">
+                            <span class="product-badge badge-popular">الأكثر مبيعًا</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">بطاريات فيب 18650 - زوج</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">180 جنيه</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- المنتج 6 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/300x300?text=Vape+Liquid" alt="ليكويد فيب">
+                            <span class="product-badge badge-discount">خصم 15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title">ليكويد فيب - نكهات متنوعة</h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(4.9)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current-price">90 جنيه</span>
+                                <span class="original-price">105 جنيه</span>
+                            </div>
+                            <button class="add-to-cart-btn">
+                                <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- التصفح بين الصفحات -->
+                <div class="pagination">
+                    <button><i class="fas fa-chevron-right"></i></button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button><i class="fas fa-chevron-left"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="#shipping"><i class="fas fa-shipping-fast"></i> الشحن والتوصيل</a></li>
+                    <li><a href="#returns"><i class="fas fa-exchange-alt"></i> سياسة الإستبدال والإسترجاع</a></li>
+                    <li><a href="#privacy"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع التسوق، القاهرة، مصر</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 01001234567</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@mobile-vape-store.com</p>
+                <p><i class="fas fa-clock"></i> ساعات العمل: 10 صباحاً - 10 مساءً</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h3>النشرة البريدية</h3>
+                <p>اشترك ليصلك كل جديد عن العروض والمنتجات</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit">اشتراك</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني</p>
+            <p>تصميم وتطوير: فريق المتجر الإلكتروني</p>
+        </div>
+    </footer>
+
+    <!-- إضافة منطق البحث في جميع الملفات -->
+    <script>
+        document.querySelector('.search-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const query = document.querySelector('input[name="query"]').value;
+
+            // البحث في قاعدة البيانات أو الملفات
+            const response = await fetch('/search-api?query=' + (query.trim() ? encodeURIComponent(query) : 'all'));
+            const results = await response.json();
+
+            // عرض النتائج في واجهة المستخدم
+            const resultsContainer = document.querySelector('.products-grid');
+            resultsContainer.innerHTML = '';
+
+            results.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.className = 'product-card';
+                productCard.innerHTML = `
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.title}">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">${product.title}</h3>
+                        <div class="product-price">
+                            <span class="current-price">${product.price} جنيه</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-cart-plus"></i> إضافة إلى السلة
+                        </button>
+                    </div>
+                `;
+                resultsContainer.appendChild(productCard);
+            });
+        });
+    </script>
+
+    <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نفس الكود الموحد) -->
+    <div id="support-chat-icon" title="تواصل مع الدعم الفني">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="support-chat-modal" class="support-chat-modal">
+      <div class="support-chat-modal-content">
+        <span class="support-chat-close">&times;</span>
+        <h3 style="color:#007bff; margin-bottom:10px;">الدردشة مع الدعم الفني</h3>
+        <div class="support-chat-body">
+          <div class="support-chat-message support-chat-message-agent">مرحباً! كيف يمكنني مساعدتك اليوم؟</div>
+        </div>
+        <form class="support-chat-form" onsubmit="event.preventDefault(); sendSupportMessage();">
+          <input type="text" id="support-chat-input" placeholder="اكتب رسالتك..." autocomplete="off" />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <script>
+    document.getElementById('support-chat-icon').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'block';
+      setTimeout(function(){
+        document.getElementById('support-chat-input').focus();
+      }, 200);
+    };
+    document.querySelector('.support-chat-close').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('support-chat-modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    function sendSupportMessage() {
+      var input = document.getElementById('support-chat-input');
+      var msg = input.value.trim();
+      if (!msg) return;
+      var body = document.querySelector('.support-chat-body');
+      var userMsg = document.createElement('div');
+      userMsg.className = 'support-chat-message support-chat-message-user';
+      userMsg.textContent = msg;
+      body.appendChild(userMsg);
+      input.value = '';
+      body.scrollTop = body.scrollHeight;
+      setTimeout(function(){
+        var agentMsg = document.createElement('div');
+        agentMsg.className = 'support-chat-message support-chat-message-agent';
+        agentMsg.textContent = 'تم استلام رسالتك، سنرد عليك قريباً.';
+        body.appendChild(agentMsg);
+        body.scrollTop = body.scrollHeight;
+      }, 1200);
+    }
+    </script>
+    <!-- نهاية أيقونة الدردشة -->
+</body>
+</html>

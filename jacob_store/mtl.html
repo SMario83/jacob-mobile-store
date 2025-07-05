@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ليكويد MTL - متجر إلكتروني</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>متجر إلكتروني</h1>
+        <p>أفضل أنواع الليكويد بجودة عالية وأسعار مميزة</p>
+    </header>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+            <i class="fas fa-store"></i> متجر إلكتروني
+        </a>
+        
+        <ul class="nav-items">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="Repairs.html">مركز الصيانة</a></li>
+            <li><a href="Support.html">دعم فني</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+        
+        <form class="search-form" action="search.html">
+            <input type="text" name="query" placeholder="ابحث عن منتج...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="user-actions">
+            <a href="cart.html" class="action-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="account.html" class="action-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+        
+        <button class="menu-btn" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <!-- المحتوى الرئيسي لمنتج MTL -->
+    <main>
+        <!-- القائمة الجانبية -->
+        <aside>
+            <h2><i class="fas fa-list"></i> أقسام المتجر</h2>
+            
+            <!-- قسم الموبايلات -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu">
+                    <span><i class="fas fa-mobile-alt"></i> الموبايلات</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="New mobile phones.html"><i class="fas fa-box-open"></i> جديد</a></li>
+                    <li><a href="Used mobile phones.html"><i class="fas fa-sync-alt"></i> مستعمل</a></li>
+                </ul>
+            </div>
+            
+            <!-- قسم الفيب -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu">
+                    <span><i class="fas fa-smoking"></i> الفيب</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="New vape.html"><i class="fas fa-box-open"></i> جديد</a></li>
+                    <li><a href="Used vape.html"><i class="fas fa-sync-alt"></i> مستعمل</a></li>
+                    <li class="parent">
+                        <a href="#" class="toggle-submenu">
+                            <span><i class="fas fa-cogs"></i> اكسسوارات فيب</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#coils"><i class="fas fa-fire"></i> كويلات فيب</a></li>
+                            <li><a href="#batteries"><i class="fas fa-battery-full"></i> بطاريات</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- قسم الليكويد -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu" aria-haspopup="true" aria-expanded="false">
+                    <span><i class="fas fa-tint"></i> الليكويد</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="fas fa-cloud"></i> DL</a></li>
+                    <li><a href="mtl.html" class="active"><i class="fas fa-wind"></i> MTL</a></li>
+                </ul>
+            </div>
+            
+            <!-- قسم الاكسسوارات -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu">
+                    <span><i class="fas fa-plug"></i> الإكسسوارات</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="Chargers.html"><i class="fas fa-bolt"></i> شواحن</a></li>
+                    <li><a href="Power bank.html"><i class="fas fa-charging-station"></i> باور بنك</a></li>
+                    <li><a href="Airpods.html"><i class="fas fa-headphones"></i> ايربودز</a></li>
+                    <li><a href="Cases.html"><i class="fas fa-mobile-alt"></i> جرابات</a></li>
+                    <li><a href="Hand free.html"><i class="fas fa-headset"></i> هاند فري</a></li>
+                    <li><a href="Cables.html"><i class="fas fa-cable-car"></i> كابلات</a></li>
+                    <li><a href="batteries"><i class="fas fa-battery-full"></i> بطاريات</a></li>
+                    <li><a href="Sound.html"><i class="fas fa-volume-up"></i> صبات</a></li>
+                </ul>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#"><i class="fas fa-tools"></i> مركز الصيانة</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#"><i class="fas fa-headset"></i> الدعم الفني</a>
+            </div>
+        </aside>
+        
+        <!-- تفاصيل منتج MTL -->
+        <div class="product-details">
+            <div class="product-header">
+                <h2><i class="fas fa-wind"></i> ليكويد MTL</h2>
+                <p>تجربة تدخين سلسة مع نكهات مميزة</p>
+            </div>
+            
+            <div class="product-content">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="https://via.placeholder.com/400x400?text=MTL+Liquid" alt="ليكويد MTL">
+                    </div>
+                    <div class="thumbnails">
+                        <img src="https://via.placeholder.com/100x100?text=MTL+1" alt="ليكويد MTL نكهة 1">
+                        <img src="https://via.placeholder.com/100x100?text=MTL+2" alt="ليكويد MTL نكهة 2">
+                        <img src="https://via.placeholder.com/100x100?text=MTL+3" alt="ليكويد MTL نكهة 3">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h3 class="product-title">ليكويد MTL عالي الجودة</h3>
+                    
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.7) 120 تقييم</span>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="current-price">90 ج.م</span>
+                        <span class="original-price">110 ج.م</span>
+                        <span class="discount">خصم 18%</span>
+                    </div>
+                    
+                    <div class="product-description">
+                        <p>
+                            ليكويد MTL مصمم خصيصًا لأجهزة الفيب من نوع MTL (Mouth To Lung) 
+                            لتقديم تجربة تدخين مشابهة للسجائر التقليدية. يتميز بنسبة PG/VG 
+                            متوازنة تمنحك نكهة قوية وسحابة دخان معتدلة.
+                        </p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> نسبة PG/VG: 50/50</li>
+                            <li><i class="fas fa-check-circle"></i> متوفر بقوة نيكوتين مختلفة (0mg, 3mg, 6mg, 12mg)</li>
+                            <li><i class="fas fa-check-circle"></i> صناعة أوروبية عالية الجودة</li>
+                            <li><i class="fas fa-check-circle"></i> خالي من الدياستيل والأكرولين</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>قوة النيكوتين:</label>
+                            <select>
+                                <option value="0mg">0mg (بدون نيكوتين)</option>
+                                <option value="3mg">3mg (خفيف)</option>
+                                <option value="6mg" selected>6mg (متوسط)</option>
+                                <option value="12mg">12mg (قوي)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>النكهة:</label>
+                            <select>
+                                <option value="tobacco">تبغ كلاسيك</option>
+                                <option value="menthol">منثول منعش</option>
+                                <option value="apple">تفاح أخضر</option>
+                                <option value="berry">توت مشكل</option>
+                                <option value="vanilla">فانيليا</option>
+                            </select>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>الكمية:</label>
+                            <select>
+                                <option value="10ml">10 مل</option>
+                                <option value="30ml" selected>30 مل</option>
+                                <option value="60ml">60 مل</option>
+                            </select>
+                        </div>
+                        
+                        <div class="quantity-control">
+                            <label>الكمية:</label>
+                            <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10">
+                            <button class="qty-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="btn btn-cart">
+                            <i class="fas fa-shopping-cart"></i> أضف إلى السلة
+                        </button>
+                        <button class="btn btn-wishlist">
+                            <i class="fas fa-heart"></i> أضف إلى المفضلة
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>شحن سريع خلال 24-48 ساعة</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>ضمان الجودة</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-undo"></i>
+                            <span>إرجاع سهل خلال 14 يوم</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- وصف تفصيلي للمنتج -->
+            <div class="product-tabs">
+                <ul class="tabs-nav">
+                    <li class="active">الوصف التفصيلي</li>
+                    <li>المواصفات</li>
+                    <li>التقييمات (120)</li>
+                    <li>الأسئلة الشائعة</li>
+                </ul>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active">
+                        <h3>تجربة تدخين استثنائية مع ليكويد MTL</h3>
+                        <p>
+                            ليكويد MTL من إنتاج شركة رائدة في صناعة السوائل الإلكترونية، 
+                            مصمم خصيصًا لتلبية احتياجات مستخدمي أجهزة الفيب من نوع MTL. 
+                            يتميز هذا الليكويد بنسبة متوازنة من البروبيلين جلايكول (PG) 
+                            والجليسرين النباتي (VG) تبلغ 50/50، مما يضمن لك:
+                        </p>
+                        <ul>
+                            <li>نكهة قوية ومكثفة</li>
+                            <li>سحابة دخان معتدلة تناسب التدخين من الفم إلى الرئة</li>
+                            <li>ضربة حلق لطيفة ومريحة</li>
+                            <li>عدم انسداد الكويلات بسرعة</li>
+                        </ul>
+                        <p>
+                            تم تصنيع هذا الليكويد باستخدام مكونات عالية الجودة وخاضعة 
+                            لمراقبة صارمة، وهو خالي تمامًا من الدياستيل، الأكرولين، 
+                            والمواد الضارة الأخرى التي قد توجد في بعض السوائل الرديئة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- منتجات مشابهة -->
+            <div class="related-products">
+                <h3><i class="fas fa-random"></i> منتجات مشابهة</h3>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/200x200?text=DL+Liquid" alt="ليكويد DL">
+                        </div>
+                        <div class="product-info">
+                            <h4>ليكويد DL</h4>
+                            <div class="product-price">
+                                <span class="current-price">95 ج.م</span>
+                            </div>
+                            <button class="btn btn-cart">أضف للسلة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/200x200?text=MTL+Special" alt="ليكويد MTL خاص">
+                        </div>
+                        <div class="product-info">
+                            <h4>ليكويد MTL خاص</h4>
+                            <div class="product-price">
+                                <span class="current-price">110 ج.م</span>
+                            </div>
+                            <button class="btn btn-cart">أضف للسلة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/200x200?text=Tobacco+Flavor" alt="نكهة تبغ">
+                        </div>
+                        <div class="product-info">
+                            <h4>نكهة تبغ MTL</h4>
+                            <div class="product-price">
+                                <span class="current-price">85 ج.م</span>
+                            </div>
+                            <button class="btn btn-cart">أضف للسلة</button>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/200x200?text=Menthol+MTL" alt="منثول MTL">
+                        </div>
+                        <div class="product-info">
+                            <h4>منثول MTL</h4>
+                            <div class="product-price">
+                                <span class="current-price">80 ج.م</span>
+                            </div>
+                            <button class="btn btn-cart">أضف للسلة</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>عن المتجر</h3>
+                <p>متجر إلكتروني متخصص في بيع الموبايلات وأجهزة الفيب والليكويد بأسعار تنافسية وجودة عالية.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="#"><i class="fas fa-shipping-fast"></i> الشحن والتوصيل</a></li>
+                    <li><a href="#"><i class="fas fa-exchange-alt"></i> سياسة الإستبدال والإسترجاع</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع التسوق، القاهرة، مصر</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 01001234567</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@mobile-vape-store.com</p>
+                <p><i class="fas fa-clock"></i> ساعات العمل: 10 صباحاً - 10 مساءً</p>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني</p>
+                <p>تصميم وتطوير: فريق المتجر الإلكتروني</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نفس الكود الموحد) -->
+    <div id="support-chat-icon" title="تواصل مع الدعم الفني">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="support-chat-modal" class="support-chat-modal">
+      <div class="support-chat-modal-content">
+        <span class="support-chat-close">&times;</span>
+        <h3 style="color:#007bff; margin-bottom:10px;">الدردشة مع الدعم الفني</h3>
+        <div class="support-chat-body">
+          <div class="support-chat-message support-chat-message-agent">مرحباً! كيف يمكنني مساعدتك اليوم؟</div>
+        </div>
+        <form class="support-chat-form" onsubmit="event.preventDefault(); sendSupportMessage();">
+          <input type="text" id="support-chat-input" placeholder="اكتب رسالتك..." autocomplete="off" />
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <script>
+    document.getElementById('support-chat-icon').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'block';
+      setTimeout(function(){
+        document.getElementById('support-chat-input').focus();
+      }, 200);
+    };
+    document.querySelector('.support-chat-close').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('support-chat-modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    function sendSupportMessage() {
+      var input = document.getElementById('support-chat-input');
+      var msg = input.value.trim();
+      if (!msg) return;
+      var body = document.querySelector('.support-chat-body');
+      var userMsg = document.createElement('div');
+      userMsg.className = 'support-chat-message support-chat-message-user';
+      userMsg.textContent = msg;
+      body.appendChild(userMsg);
+      input.value = '';
+      body.scrollTop = body.scrollHeight;
+      setTimeout(function(){
+        var agentMsg = document.createElement('div');
+        agentMsg.className = 'support-chat-message support-chat-message-agent';
+        agentMsg.textContent = 'تم استلام رسالتك، سنرد عليك قريباً.';
+        body.appendChild(agentMsg);
+        body.scrollTop = body.scrollHeight;
+      }, 1200);
+    }
+    </script>
+    <!-- نهاية أيقونة الدردشة -->
+    
+    <script>
+        // تنشيط القوائم المنسدلة
+        document.querySelectorAll('.toggle-submenu').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const submenu = this.nextElementSibling;
+                const icon = this.querySelector('.fa-angle-down');
+                
+                if (submenu.classList.contains('active')) {
+                    submenu.classList.remove('active');
+                    icon.classList.remove('fa-angle-up');
+                    icon.classList.add('fa-angle-down');
+                } else {
+                    submenu.classList.add('active');
+                    icon.classList.remove('fa-angle-down');
+                    icon.classList.add('fa-angle-up');
+                }
+            });
+        });
+        
+        // زر القائمة المتنقلة للأجهزة الصغيرة
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.querySelector('.nav-items').classList.toggle('active');
+        });
+        
+        // إضافة تأثير عند النقر على أزرار الإضافة للسلة
+        document.querySelectorAll('.btn-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.querySelector('.cart-count');
+                let count = parseInt(cartCount.textContent) || 0;
+                count++;
+                cartCount.textContent = count;
+                
+                // تغيير مؤقت للزر
+                this.innerHTML = '<i class="fas fa-check"></i> تمت الإضافة';
+                this.style.backgroundColor = '#27ae60';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> أضف للسلة';
+                    this.style.backgroundColor = '';
+                }, 2000);
+            });
+        });
+        
+        // التحكم في كمية المنتج
+        document.querySelectorAll('.qty-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.parentElement.querySelector('input');
+                let value = parseInt(input.value);
+                
+                if (this.querySelector('.fa-minus')) {
+                    if (value > 1) input.value = value - 1;
+                } else {
+                    if (value < 10) input.value = value + 1;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

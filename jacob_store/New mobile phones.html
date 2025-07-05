@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موبايلات جديدة - متجر إلكتروني</title>
+    <link rel="icon" type="image/x-icon" href="image/Asset9.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>متجر إلكتروني</h1>
+        <p>أحدث الموبايلات الجديدة بأسعار مميزة</p>
+    </header>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+            <i class="fas fa-store"></i> متجر إلكتروني
+        </a>
+        
+        <ul class="nav-items">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="Repairs.html">مركز الصيانة</a></li>
+            <li><a href="Support.html">دعم فني</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+        </ul>
+        
+        <form class="search-form" action="search.html">
+            <input type="text" name="query" placeholder="ابحث عن موبايل...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="user-actions">
+            <a href="cart.html" class="action-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="account.html" class="action-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+        
+        <button class="menu-btn" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <!-- القائمة الجانبية -->
+        <aside>
+            <h2><i class="fas fa-list"></i> أقسام المتجر</h2>
+            
+            <!-- قسم الموبايلات -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu">
+                    <span><i class="fas fa-mobile-alt"></i> الموبايلات</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="New mobile phones.html" class="active"><i class="fas fa-box-open"></i> جديد</a></li>
+                    <li><a href="Used mobile phones.html"><i class="fas fa-sync-alt"></i> مستعمل</a></li>
+                </ul>
+            </div>
+            
+            <!-- قسم الفيب -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu">
+                    <span><i class="fas fa-smoking"></i> الفيب</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="new-vape.html"><i class="fas fa-box-open"></i> جديد</a></li>
+                    <li><a href="used-vape.html"><i class="fas fa-sync-alt"></i> مستعمل</a></li>
+                    <li class="parent">
+                        <a href="#" class="toggle-submenu">
+                            <span><i class="fas fa-cogs"></i> اكسسوارات فيب</span>
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="#coils"><i class="fas fa-fire"></i> كويلات فيب</a></li>
+                            <li><a href="#batteries"><i class="fas fa-battery-full"></i> بطاريات</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- قسم الليكويد -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu" aria-haspopup="true" aria-expanded="false">
+                    <span><i class="fas fa-tint"></i> الليكويد</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="fas fa-cloud"></i> dl</a></li>
+                    <li><a href="#"><i class="fas fa-wind"></i> mtl</a></li>
+                </ul>
+            </div>
+            
+            <!-- قسم الاكسسوارات -->
+            <div class="menu-item parent">
+                <a href="#" class="toggle-submenu">
+                    <span><i class="fas fa-plug"></i> الإكسسوارات</span>
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#chargers"><i class="fas fa-bolt"></i> شواحن</a></li>
+                    <li><a href="#Power bank"><i class="fas fa-charging-station"></i> باور بنك</a></li>
+                    <li><a href="#Airpods"><i class="fas fa-headphones"></i> ايربودز</a></li>
+                    <li><a href="#Cases"><i class="fas fa-mobile-alt"></i> جرابات</a></li>
+                    <li><a href="#headphones"><i class="fas fa-headset"></i> هاند فري</a></li>
+                    <li><a href="#cables"><i class="fas fa-cable-car"></i> كابلات</a></li>
+                    <li><a href="#batteries"><i class="fas fa-battery-full"></i> بطاريات</a></li>
+                    <li><a href="#Sound"><i class="fas fa-volume-up"></i> صبات</a></li>
+                </ul>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#"><i class="fas fa-tools"></i> مركز الصيانة</a>
+            </div>
+            
+            <div class="menu-item">
+                <a href="#"><i class="fas fa-headset"></i> الدعم الفني</a>
+            </div>
+        </aside>
+        
+        <!-- المحتوى الرئيسي -->
+        <div class="products-section">
+            <div class="section-header">
+                <h2><i class="fas fa-mobile-alt"></i> موبايلات جديدة</h2>
+                <div class="sort-filter">
+                    <label for="sort">ترتيب حسب:</label>
+                    <select id="sort">
+                        <option value="newest">الأحدث</option>
+                        <option value="price-low">السعر: منخفض إلى مرتفع</option>
+                        <option value="price-high">السعر: مرتفع إلى منخفض</option>
+                        <option value="popular">الأكثر شعبية</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- تصفية المنتجات -->
+             <nav class="navbar1">
+                <div class="filters">
+                <h3><i class="fas fa-filter"></i> تصفية النتائج</h3>
+                
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label>الشركة المصنعة:</label>
+                        <select>
+                            <option>الكل</option>
+                            <option>سامسونج</option>
+                            <option>آيفون</option>
+                            <option>شاومي</option>
+                            <option>هواوي</option>
+                            <option>أوبو</option>
+                            <option>نوكيا</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>نطاق السعر:</label>
+                        <select>
+                            <option>الكل</option>
+                            <option>أقل من 2000 جنيه</option>
+                            <option>2000 - 4000 جنيه</option>
+                            <option>4000 - 6000 جنيه</option>
+                            <option>أكثر من 6000 جنيه</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>سعة التخزين:</label>
+                        <select>
+                            <option>الكل</option>
+                            <option>64 جيجابايت</option>
+                            <option>128 جيجابايت</option>
+                            <option>256 جيجابايت</option>
+                            <option>512 جيجابايت</option>
+                            <option>1 تيرابايت</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>بحث:</label>
+                        <input type="text" placeholder="ابحث عن موبايل...">
+                    </div>
+                </div>
+                
+                <div class="filter-actions">
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-redo"></i> إعادة تعيين
+                    </button>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-check"></i> تطبيق التصفية
+                    </button>
+                </div>
+            </div>
+             </nav>
+            
+            <!-- قائمة المنتجات -->
+            <div class="products-grid">
+                <!-- منتج 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">جديد</span>
+                        <span class="product-badge badge-discount">خصم 10%</span>
+                        <img src="https://via.placeholder.com/300x300?text=Galaxy+S24" alt="سامسونج جالكسي S24">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">سامسونج جالكسي S24</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">5,200 ج.م</span>
+                            <span class="original-price">5,800 ج.م</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">128 جيجابايت</span>
+                            <span class="spec">8 جيجابايت رام</span>
+                            <span class="spec">كاميرا 50 ميجابكسل</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart">
+                                <i class="fas fa-shopping-cart"></i> أضف للسلة
+                            </button>
+                            <button class="btn btn-details">
+                                <i class="fas fa-info-circle"></i> التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- منتج 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">جديد</span>
+                        <img src="https://via.placeholder.com/300x300?text=iPhone+15+Pro" alt="آيفون 15 برو">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">آيفون 15 برو</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">6,500 ج.م</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">256 جيجابايت</span>
+                            <span class="spec">معالج A17</span>
+                            <span class="spec">شاشة 6.1 بوصة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart">
+                                <i class="fas fa-shopping-cart"></i> أضف للسلة
+                            </button>
+                            <button class="btn btn-details">
+                                <i class="fas fa-info-circle"></i> التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- منتج 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">جديد</span>
+                        <img src="https://via.placeholder.com/300x300?text=Xiaomi+Note+13" alt="شاومي ريدمي نوت 13">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">شاومي ريدمي نوت 13</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>(4.3)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">3,800 ج.م</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">256 جيجابايت</span>
+                            <span class="spec">بطارية 5000 مللي أمبير</span>
+                            <span class="spec">شاشة 6.7 بوصة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart">
+                                <i class="fas fa-shopping-cart"></i> أضف للسلة
+                            </button>
+                            <button class="btn btn-details">
+                                <i class="fas fa-info-circle"></i> التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- منتج 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">جديد</span>
+                        <span class="product-badge badge-discount">خصم 15%</span>
+                        <img src="https://via.placeholder.com/300x300?text=Huawei+P60+Pro" alt="هواوي P60 برو">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">هواوي P60 برو</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">4,800 ج.م</span>
+                            <span class="original-price">5,650 ج.م</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">512 جيجابايت</span>
+                            <span class="spec">كاميرا ثلاثية</span>
+                            <span class="spec">شاشة 6.6 بوصة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart">
+                                <i class="fas fa-shopping-cart"></i> أضف للسلة
+                            </button>
+                            <button class="btn btn-details">
+                                <i class="fas fa-info-circle"></i> التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- منتج 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">جديد</span>
+                        <img src="https://via.placeholder.com/300x300?text=Oppo+Reno+10" alt="أوبو رينو 10">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">أوبو رينو 10</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>(4.4)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">4,200 ج.م</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">256 جيجابايت</span>
+                            <span class="spec">شحن سريع 80W</span>
+                            <span class="spec">شاشة 6.7 بوصة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart">
+                                <i class="fas fa-shopping-cart"></i> أضف للسلة
+                            </button>
+                            <button class="btn btn-details">
+                                <i class="fas fa-info-circle"></i> التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- منتج 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge badge-new">جديد</span>
+                        <img src="https://via.placeholder.com/300x300?text=Nokia+G60" alt="نوكيا G60">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">نوكيا G60</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <span>(3.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">2,800 ج.م</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">128 جيجابايت</span>
+                            <span class="spec">نظام أندرويد خام</span>
+                            <span class="spec">شاشة 6.5 بوصة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart">
+                                <i class="fas fa-shopping-cart"></i> أضف للسلة
+                            </button>
+                            <button class="btn btn-details">
+                                <i class="fas fa-info-circle"></i> التفاصيل
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نظام Tawk.to حقيقي) -->
+    <div id="support-chat-icon" title="تواصل مع الدعم الفني">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="support-chat-modal" class="support-chat-modal">
+      <div class="support-chat-modal-content" style="padding:0; min-height:420px;">
+        <span class="support-chat-close" style="z-index:2; position:absolute; left:12px; top:10px; font-size:1.5rem; color:#888; cursor:pointer;">&times;</span>
+        <div id="tawkto-container" style="width:100%;height:400px;min-height:400px;overflow:hidden;border-radius:12px;"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    // إظهار وإخفاء نافذة الدردشة
+    document.getElementById('support-chat-icon').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'block';
+    };
+    document.querySelector('.support-chat-close').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('support-chat-modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    // تضمين Tawk.to داخل المودال
+    (function(){
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/64a6e7e094cf5d49dc62b1e2/1h4v7kq2g'; // ضع هنا معرف Tawk.to الخاص بك
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s1.onload = function() {
+        // نقل نافذة الدردشة داخل المودال
+        var tawkFrame = document.querySelector('iframe[title="chat widget"]');
+        if (tawkFrame) {
+          document.getElementById('tawkto-container').appendChild(tawkFrame);
+        }
+      };
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!-- نهاية أيقونة الدردشة -->
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>عن المتجر</h3>
+                <p>متجر إلكتروني متخصص في بيع الموبايلات الجديدة والمستعملة وأجهزة الفيب والإكسسوارات بأسعار تنافسية وجودة عالية.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="#shipping"><i class="fas fa-shipping-fast"></i> الشحن والتوصيل</a></li>
+                    <li><a href="#returns"><i class="fas fa-exchange-alt"></i> سياسة الإستبدال والإسترجاع</a></li>
+                    <li><a href="#privacy"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع التسوق، القاهرة، مصر</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 01001234567</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@mobile-vape-store.com</p>
+                <p><i class="fas fa-clock"></i> ساعات العمل: 10 صباحاً - 10 مساءً</p>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني</p>
+                <p>تصميم وتطوير: فريق المتجر الإلكتروني</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // تنشيط القوائم المنسدلة
+        document.querySelectorAll('.toggle-submenu').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const submenu = this.nextElementSibling;
+                const icon = this.querySelector('.fa-angle-down');
+                
+                if (submenu.classList.contains('active')) {
+                    submenu.classList.remove('active');
+                    icon.classList.remove('fa-angle-up');
+                    icon.classList.add('fa-angle-down');
+                } else {
+                    submenu.classList.add('active');
+                    icon.classList.remove('fa-angle-down');
+                    icon.classList.add('fa-angle-up');
+                }
+            });
+        });
+        
+        // زر القائمة المتنقلة للأجهزة الصغيرة
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.querySelector('.nav-items').classList.toggle('active');
+        });
+        
+        // تمييز العنصر النشط في القائمة الجانبية
+        const currentPage = window.location.pathname.split('/').pop();
+        document.querySelectorAll('aside a').forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+                
+                // توسيع القائمة الفرعية إذا كان العنصر نشطًا
+                let parent = link.closest('.submenu');
+                while (parent) {
+                    parent.classList.add('active');
+                    const parentLink = parent.previousElementSibling;
+                    if (parentLink && parentLink.classList.contains('toggle-submenu')) {
+                        const icon = parentLink.querySelector('.fa-angle-down');
+                        if (icon) {
+                            icon.classList.remove('fa-angle-down');
+                            icon.classList.add('fa-angle-up');
+                        }
+                    }
+                    parent = parent.parentElement.closest('.submenu');
+                }
+            }
+        });
+        
+        // إضافة تأثير عند النقر على أزرار الإضافة للسلة
+        document.querySelectorAll('.btn-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const cartCount = document.querySelector('.cart-count');
+                let count = parseInt(cartCount.textContent) || 0;
+                count++;
+                cartCount.textContent = count;
+                
+                // تغيير مؤقت للزر
+                this.innerHTML = '<i class="fas fa-check"></i> تمت الإضافة';
+                this.style.backgroundColor = '#27ae60';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> أضف للسلة';
+                    this.style.backgroundColor = '';
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

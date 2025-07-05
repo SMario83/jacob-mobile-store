@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر إلكتروني - موبايلات | فيب | أجهزة إلكترونية</title>
+    <link rel="icon" type="image/x-icon" href="image/Asset9.png">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>متجر إلكتروني</h1>
+        <p>أفضل العروض على الموبايلات وأجهزة الفيب</p>
+    </header>
+    
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <a href="index.html" class="brand-logo">
+            <i class="fas fa-store"></i> متجر إلكتروني
+        </a>
+        
+        <ul class="nav-items">
+            <li><a href="index.html" class="active">الرئيسية</a></li>
+            <li><a href="Repairs.html">مركز الصيانة</a></li>
+            <li><a href="Support.html">دعم فني</a></li>
+            <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        
+        <form class="search-form" action="search.html">
+            <input type="text" name="query" placeholder="ابحث عن منتج...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        
+        <div class="user-actions">
+            <a href="cart.html" class="action-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <a href="account.html" class="action-icon">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+        
+        <button class="menu-btn" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    
+    <!-- قسم الدردشة مع الدعم الفني فقط -->
+    <main>
+        <section class="support-chat-section" style="max-width: 700px; margin: 60px auto 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 6px 24px rgba(0,0,0,0.10); padding: 40px 30px;">
+            <h2 style="text-align: center; color: #007bff; font-size: 2rem; margin-bottom: 25px;">الدردشة مع خدمة العملاء</h2>
+            <div id="chat-box" style="height: 320px; overflow-y: auto; background: #f7f7f7; border-radius: 10px; padding: 18px; margin-bottom: 18px; border: 1px solid #e0e0e0;">
+                <div style="text-align: center; color: #888; margin-bottom: 10px;">ابدأ الدردشة مع خدمة العملاء الآن</div>
+            </div>
+            <form id="chat-form" style="display: flex; gap: 10px;">
+                <input type="text" id="chat-input" placeholder="اكتب رسالتك هنا..." style="flex: 1; padding: 12px; border-radius: 8px; border: 1.5px solid #007bff; font-size: 1rem;">
+                <button type="submit" style="background: #007bff; color: #fff; border: none; border-radius: 8px; padding: 0 22px; font-size: 1.1rem; cursor: pointer;">إرسال</button>
+            </form>
+        </section>
+        <script>
+        // دردشة دعم العملاء (محلي فقط)
+        const chatBox = document.getElementById('chat-box');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        chatForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const msg = chatInput.value.trim();
+            if(msg) {
+                const userMsg = document.createElement('div');
+                userMsg.style.cssText = 'text-align:right; margin-bottom:8px;';
+                userMsg.innerHTML = `<span style='background:#e3f0ff; color:#222; padding:7px 14px; border-radius:8px; display:inline-block; max-width:80%;'>${msg}</span>`;
+                chatBox.appendChild(userMsg);
+                chatBox.scrollTop = chatBox.scrollHeight;
+                setTimeout(() => {
+                    const supportMsg = document.createElement('div');
+                    supportMsg.style.cssText = 'text-align:left; margin-bottom:8px;';
+                    supportMsg.innerHTML = `<span style='background:#007bff; color:#fff; padding:7px 14px; border-radius:8px; display:inline-block; max-width:80%;'>شكرًا لتواصلك، سيتم الرد عليك قريبًا.</span>`;
+                    chatBox.appendChild(supportMsg);
+                    chatBox.scrollTop = chatBox.scrollHeight;
+                }, 900);
+                chatInput.value = '';
+            }
+        });
+        </script>
+    </main>
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="#shipping"><i class="fas fa-shipping-fast"></i> الشحن والتوصيل</a></li>
+                    <li><a href="#returns"><i class="fas fa-exchange-alt"></i> سياسة الإستبدال والإسترجاع</a></li>
+                    <li><a href="#privacy"><i class="fas fa-shield-alt"></i> سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع التسوق، القاهرة، مصر</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 01001234567</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@mobile-vape-store.com</p>
+                <p><i class="fas fa-clock"></i> ساعات العمل: 10 صباحاً - 10 مساءً</p>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <h3>النشرة البريدية</h3>
+                <p>اشترك ليصلك كل جديد عن العروض والمنتجات</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="بريدك الإلكتروني" required>
+                    <button type="submit" class="btn btn-cart">اشتراك</button>
+                </form>
+            </div>
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني</p>
+                <p>تصميم وتطوير: فريق المتجر الإلكتروني</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // تنشيط القوائم المنسدلة
+        document.querySelectorAll('.toggle-submenu').forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                const submenu = this.nextElementSibling;
+                const icon = this.querySelector('.fa-angle-down');
+                
+                if (submenu.classList.contains('active')) {
+                    submenu.classList.remove('active');
+                    icon.classList.remove('fa-angle-up');
+                    icon.classList.add('fa-angle-down');
+                } else {
+                    submenu.classList.add('active');
+                    icon.classList.remove('fa-angle-down');
+                    icon.classList.add('fa-angle-up');
+                }
+            });
+        });
+        
+        // زر القائمة المتنقلة للأجهزة الصغيرة
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            document.querySelector('.nav-items').classList.toggle('active');
+        });
+        
+        // تحديث عدد المنتجات في السلة
+        function updateCartCount() {
+            const count = Math.floor(Math.random() * 5) + 1;
+            document.querySelector('.cart-count').textContent = count;
+        }
+        
+        // تحديث عدد المنتجات عند النقر على أضف للسلة
+        document.querySelectorAll('.btn-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                updateCartCount();
+                this.innerHTML = '<i class="fas fa-check"></i> تمت الإضافة';
+                this.style.backgroundColor = '#27ae60';
+                
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-shopping-cart"></i> أضف للسلة';
+                    this.style.backgroundColor = '';
+                }, 2000);
+            });
+        });
+        
+        // تحديث عدد المنتجات في السلة عند التحميل
+        updateCartCount();
+    </script>
+    
+    <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نظام Tawk.to حقيقي) -->
+    <div id="support-chat-icon" title="تواصل مع الدعم الفني" style="display:block;">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="support-chat-modal" class="support-chat-modal">
+      <div class="support-chat-modal-content" style="padding:0; min-height:420px;">
+        <span class="support-chat-close" style="z-index:2; position:absolute; left:12px; top:10px; font-size:1.5rem; color:#888; cursor:pointer;">&times;</span>
+        <div id="tawkto-container" style="width:100%;height:400px;min-height:400px;overflow:hidden;border-radius:12px;"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    // إظهار وإخفاء نافذة الدردشة
+    var chatIcon = document.getElementById('support-chat-icon');
+    if(chatIcon) chatIcon.style.display = 'block';
+    chatIcon.onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'block';
+    };
+    document.querySelector('.support-chat-close').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('support-chat-modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    // تضمين Tawk.to داخل المودال
+    (function(){
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/64a6e7e094cf5d49dc62b1e2/1h4v7kq2g'; // ضع هنا معرف Tawk.to الخاص بك
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s1.onload = function() {
+        var tawkFrame = document.querySelector('iframe[title="chat widget"]');
+        if (tawkFrame) {
+          document.getElementById('tawkto-container').appendChild(tawkFrame);
+        }
+      };
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!-- نهاية أيقونة الدردشة -->
+</body>
+</html>

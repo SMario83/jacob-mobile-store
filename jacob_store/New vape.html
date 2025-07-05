@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أجهزة فيب جديدة - متجر إلكتروني</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- رأس الصفحة -->
+    <header>
+        <div class="header-top">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mobile-alt"></i>
+                متجر إلكتروني
+            </a>
+            
+            <div class="user-actions">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="ابحث عن أجهزة فيب جديدة...">
+                <button><i class="fas fa-search"></i> بحث</button>
+            </div>
+        </div>
+        
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="New mobile phones.html"><i class="fas fa-mobile"></i> موبايلات جديدة</a>
+            <a href="used-mobiles.html"><i class="fas fa-sync-alt"></i> موبايلات مستعملة</a>
+            <a href="New vape.html" class="active"><i class="fas fa-smoking"></i> فيب جديد</a>
+            <a href="used-vape.html"><i class="fas fa-sync-alt"></i> فيب مستعمل</a>
+            <a href="accessories.html"><i class="fas fa-headphones"></i> إكسسوارات</a>
+            <a href="offers.html"><i class="fas fa-tag"></i> العروض</a>
+            <a href="contact.html"><i class="fas fa-phone-alt"></i> اتصل بنا</a>
+        </nav>
+        
+        <!-- قائمة الجوال -->
+        <div class="mobile-nav" id="mobileNav">
+            <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="New mobile phones.html"><i class="fas fa-mobile"></i> موبايلات جديدة</a>
+            <a href="used-mobiles.html"><i class="fas fa-sync-alt"></i> موبايلات مستعملة</a>
+            <a href="New vape.html" class="active"><i class="fas fa-smoking"></i> فيب جديد</a>
+            <a href="used-vape.html"><i class="fas fa-sync-alt"></i> فيب مستعمل</a>
+            <a href="accessories.html"><i class="fas fa-headphones"></i> إكسسوارات</a>
+            <a href="offers.html"><i class="fas fa-tag"></i> العروض</a>
+            <a href="contact.html"><i class="fas fa-phone-alt"></i> اتصل بنا</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <!-- محتوى صفحة أجهزة فيب جديدة -->
+        <div class="page-title">
+            <h1><i class="fas fa-box-open"></i> أجهزة فيب جديدة</h1>
+            <p>اكتشف أحدث أجهزة الفيب بجودة عالية وأسعار مميزة</p>
+        </div>
+        
+        <div class="content">
+            <div class="filters-container">
+                <div class="filters">
+                    <div class="filter-section">
+                        <h3><i class="fas fa-filter"></i> التصفية</h3>
+                        <button class="apply-filters">تطبيق التصفية</button>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3><i class="fas fa-dollar-sign"></i> نطاق السعر</h3>
+                        <div class="price-range">
+                            <input type="number" placeholder="الحد الأدنى" value="50">
+                            <input type="number" placeholder="الحد الأقصى" value="500">
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3><i class="fas fa-tag"></i> الفئة</h3>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="pod" checked>
+                                <label for="pod">أجهزة بود (POD)</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="mod" checked>
+                                <label for="mod">أجهزة مود (MOD)</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="disposable">
+                                <label for="disposable">أجهزة تستخدم لمرة واحدة</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="kit">
+                                <label for="kit">طقم كامل</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3><i class="fas fa-bolt"></i> سعة البطارية</h3>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="small-battery">
+                                <label for="small-battery">أقل من 1000 مللي أمبير</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="medium-battery" checked>
+                                <label for="medium-battery">1000 - 2000 مللي أمبير</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="large-battery">
+                                <label for="large-battery">أكثر من 2000 مللي أمبير</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3><i class="fas fa-star"></i> الماركة</h3>
+                        <div class="filter-options">
+                            <div class="filter-option">
+                                <input type="checkbox" id="geekvape" checked>
+                                <label for="geekvape">GeekVape</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="vaporesso" checked>
+                                <label for="vaporesso">Vaporesso</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="smok">
+                                <label for="smok">SMOK</label>
+                            </div>
+                            <div class="filter-option">
+                                <input type="checkbox" id="uwell">
+                                <label for="uwell">Uwell</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- فيب جديد 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Vaporesso+XROS+3" alt="Vaporesso XROS 3">
+                        <div class="condition badge-green">جديد</div>
+                        <div class="discount">خصم 15%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vaporesso XROS 3</h3>
+                        <div class="product-price">
+                            <span class="original-price">550 جنيه</span>
+                            <span class="current-price">467 جنيه</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">بود نظام</span>
+                            <span class="spec">بطارية: 1000mAh</span>
+                            <span class="spec">شحن USB-C</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+                            <button class="btn btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فيب جديد 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Geekvape+Aegis+Legend+2" alt="Geekvape Aegis Legend 2">
+                        <div class="condition badge-green">جديد</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Geekvape Aegis Legend 2</h3>
+                        <div class="product-price">
+                            <span class="current-price">850 جنيه</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">مود قوي</span>
+                            <span class="spec">طاقة: 200W</span>
+                            <span class="spec">مقاومة للماء</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+                            <button class="btn btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فيب جديد 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Uwell+Caliburn+G3" alt="Uwell Caliburn G3">
+                        <div class="condition badge-green">جديد</div>
+                        <div class="discount">جديد</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Uwell Caliburn G3</h3>
+                        <div class="product-price">
+                            <span class="current-price">480 جنيه</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">تصميم عصري</span>
+                            <span class="spec">بطارية: 900mAh</span>
+                            <span class="spec">شحن سريع</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+                            <button class="btn btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فيب جديد 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=SMOK+Nord+5" alt="SMOK Nord 5">
+                        <div class="condition badge-green">جديد</div>
+                        <div class="discount">خصم 10%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">SMOK Nord 5</h3>
+                        <div class="product-price">
+                            <span class="original-price">520 جنيه</span>
+                            <span class="current-price">468 جنيه</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">بود نظام</span>
+                            <span class="spec">بطارية: 2000mAh</span>
+                            <span class="spec">شاشة OLED</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+                            <button class="btn btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فيب جديد 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Voopoo+Argus+Pro+2" alt="Voopoo Argus Pro 2">
+                        <div class="condition badge-green">جديد</div>
+                        <div class="discount">جديد</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Voopoo Argus Pro 2</h3>
+                        <div class="product-price">
+                            <span class="current-price">620 جنيه</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">مود متقدم</span>
+                            <span class="spec">طاقة: 80W</span>
+                            <span class="spec">بطارية مدمجة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+                            <button class="btn btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- فيب جديد 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=OXVA+Xlim+Pro" alt="OXVA Xlim Pro">
+                        <div class="condition badge-green">جديد</div>
+                        <div class="discount">خصم 12%</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">OXVA Xlim Pro</h3>
+                        <div class="product-price">
+                            <span class="original-price">450 جنيه</span>
+                            <span class="current-price">396 جنيه</span>
+                        </div>
+                        <div class="product-specs">
+                            <span class="spec">تصميم أنيق</span>
+                            <span class="spec">بطارية: 1000mAh</span>
+                            <span class="spec">ضبط القدرة</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-cart"><i class="fas fa-shopping-cart"></i> أضف للسلة</button>
+                            <button class="btn btn-details"><i class="fas fa-info-circle"></i> التفاصيل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- أيقونة دردشة الدعم الفني العائمة + نافذة الشات (نظام Tawk.to حقيقي) -->
+    <div id="support-chat-icon" title="تواصل مع الدعم الفني">
+      <i class="fas fa-comments"></i>
+    </div>
+    <div id="support-chat-modal" class="support-chat-modal">
+      <div class="support-chat-modal-content" style="padding:0; min-height:420px;">
+        <span class="support-chat-close" style="z-index:2; position:absolute; left:12px; top:10px; font-size:1.5rem; color:#888; cursor:pointer;">&times;</span>
+        <div id="tawkto-container" style="width:100%;height:400px;min-height:400px;overflow:hidden;border-radius:12px;"></div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    // إظهار وإخفاء نافذة الدردشة
+    document.getElementById('support-chat-icon').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'block';
+    };
+    document.querySelector('.support-chat-close').onclick = function() {
+      document.getElementById('support-chat-modal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      var modal = document.getElementById('support-chat-modal');
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    };
+    // تضمين Tawk.to داخل المودال
+    (function(){
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/64a6e7e094cf5d49dc62b1e2/1h4v7kq2g'; // ضع هنا معرف Tawk.to الخاص بك
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s1.onload = function() {
+        // نقل نافذة الدردشة داخل المودال
+        var tawkFrame = document.querySelector('iframe[title="chat widget"]');
+        if (tawkFrame) {
+          document.getElementById('tawkto-container').appendChild(tawkFrame);
+        }
+      };
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!-- نهاية أيقونة الدردشة -->
+    
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن المتجر</h3>
+                    <p>متجر إلكتروني متخصص في بيع أجهزة الفيب الجديدة والسجائر الإلكترونية بأسعار تنافسية وجودة عالية.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="New mobile phones.html"><i class="fas fa-chevron-left"></i> موبايلات جديدة</a></li>
+                        <li><a href="used-mobiles.html"><i class="fas fa-chevron-left"></i> موبايلات مستعملة</a></li>
+                        <li><a href="New vape.html"><i class="fas fa-chevron-left"></i> فيب جديد</a></li>
+                        <li><a href="used-vape.html"><i class="fas fa-chevron-left"></i> فيب مستعمل</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>خدماتنا</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> الشحن والتوصيل</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> سياسة الإستبدال والاسترجاع</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> الأسئلة الشائعة</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> سياسة الخصوصية</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 شارع التسوق، القاهرة، مصر</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>01001234567 - 01007654321</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@vape-store.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>يومياً من 9 صباحاً إلى 11 مساءً</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة © 2023 متجر إلكتروني - قسم أجهزة الفيب الجديدة</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // تفعيل قائمة الجوال
+        document.getElementById('hamburger').addEventListener('click', function() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
+        });
+        
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', function(event) {
+            const mobileNav = document.getElementById('mobileNav');
+            const hamburger = document.getElementById('hamburger');
+            
+            if (!mobileNav.contains(event.target) && !hamburger.contains(event.target)) {
+                mobileNav.style.display = 'none';
+            }
+        });
+        
+        // إضافة النشط للصفحة الحالية
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('nav a, .mobile-nav a');
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === 'New vape.html') {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
